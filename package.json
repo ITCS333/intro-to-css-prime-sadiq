@@ -1,9 +1,9 @@
 {
-  "name": "css-exercise-tests",
+  "name": "css-exercise",
   "version": "1.0.0",
   "description": "CSS styling exercise with automated tests",
   "scripts": {
-    "test": "jest"
+    "test": "cd tests && npm test"
   },
   "devDependencies": {
     "jest": "^29.0.0",
