@@ -1,152 +1,167 @@
 /* styles.css */
 
-/* ===== Global Styles ===== */
-/* Base styles that apply to the entire page */
+/* -------------------- */
+/* ----- Exercise 1 ---- */
+/* -------------------- */
+/* Global body styles — font, background, color, reset */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* ===== Header Styles ===== */
-/* Main header with dark background */
+/* -------------------- */
+/* ----- Exercise 2 ---- */
+/* -------------------- */
+/* Header background, color, padding, and alignment */
 #main-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #4a4a4a;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
+/* -------------------- */
+/* ----- Exercise 3 ---- */
+/* -------------------- */
+/* Header <h1> font size and margin */
 #main-header h1 {
-    margin: 0;  /* Remove default margin from heading */
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
 }
 
-/* ===== Navigation Styles ===== */
-/* Style for the navigation menu links */
-#main-header nav {
-    margin-top: 0.5rem;
-}
-
+/* -------------------- */
+/* ----- Exercise 4 ---- */
+/* -------------------- */
+/* Navigation link color, decoration, spacing, and size */
 #main-header nav a {
-    color: #fff;
-    text-decoration: none;  /* Remove underline from links */
-    padding: 0.5rem 1rem;
-    margin: 0 0.25rem;
-    border-radius: 5px;  /* Rounded corners */
-    transition: background-color 0.3s ease;  /* Smooth hover effect */
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
 }
 
-/* Hover effect for navigation links */
+/* -------------------- */
+/* ----- Exercise 5 ---- */
+/* -------------------- */
+/* Navigation link hover state */
 #main-header nav a:hover {
-    background-color: #555;
+    color: #ffd700;
+    text-decoration: underline;
 }
 
-/* ===== Main Content Area ===== */
-/* Centers the content and adds spacing */
+/* -------------------- */
+/* ----- Exercise 6 ---- */
+/* -------------------- */
+/* Main content area max-width and centering */
 main {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-/* ===== Section Styles ===== */
-/* Card-like design for each section */
-section {
-    background-color: #fff;
-    margin-bottom: 2rem;
-    padding: 1.5rem 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* Subtle shadow effect */
-}
-
+/* -------------------- */
+/* ----- Exercise 7 ---- */
+/* -------------------- */
+/* Section heading color and bottom border */
 section h2 {
     color: #444;
-    border-bottom: 2px solid #eee;  /* Underline effect */
-    padding-bottom: 0.5rem;
-    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
 }
 
-/* ===== Intro Paragraph ===== */
-/* Special styling for the introduction text */
+/* -------------------- */
+/* ----- Exercise 8 ---- */
+/* -------------------- */
+/* Intro paragraph font size, line height, and style */
 .intro {
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 1.2em;
+    line-height: 1.8;
+    font-style: italic;
 }
 
-/* ===== Hobbies List ===== */
-/* Custom bullet points for the list */
+/* -------------------- */
+/* ----- Exercise 9 ---- */
+/* -------------------- */
+/* Hobbies list reset and list item styling */
 .hobbies-list {
-    list-style-type: square;
-    padding-left: 1.5rem;
+    list-style: none;
+    padding: 0;
 }
 
 .hobbies-list li {
-    margin-bottom: 0.25rem;
+    background-color: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* ===== Highlighted Item ===== */
-/* Makes the "Coding" hobby stand out */
+/* -------------------- */
+/* ----- Exercise 10 ---- */
+/* -------------------- */
+/* Highlighted list item override */
 .highlight {
-    background-color: #ffff99;
+    background-color: #ffeb3b;
+    color: #333;
     font-weight: bold;
-    padding: 0.2rem 0.5rem;
-    border-radius: 3px;
-    display: inline-block;  /* Prevents full-width background */
 }
 
-/* ===== Quote Section ===== */
-/* Styling for the blockquote */
+/* -------------------- */
+/* ----- Exercise 11 ---- */
+/* -------------------- */
+/* Blockquote background, padding, and border */
 #quote blockquote {
-    margin: 0;
-    font-style: italic;
-    background-color: #f9f9f9;
-    padding: 1rem 2rem;
-    border-left: 5px solid #ccc;  /* Decorative left border */
-    border-radius: 4px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 5px solid #4a4a4a;
+    margin: 20px 0;
 }
 
-#quote blockquote p {
-    font-size: 1.2rem;
-    margin: 0 0 0.5rem 0;
-}
-
-#quote blockquote cite {
+/* -------------------- */
+/* ----- Exercise 12 ---- */
+/* -------------------- */
+/* Cite element display, alignment, and color */
+cite {
     display: block;
     text-align: right;
-    font-size: 0.9rem;
     color: #666;
+    margin-top: 10px;
 }
 
-/* ===== Button Styles ===== */
-/* Styling for the email button */
+/* -------------------- */
+/* ----- Exercise 13 ---- */
+/* -------------------- */
+/* Button link styling */
 .btn {
     display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    border: none;
-    cursor: pointer;
+}
+
+/* -------------------- */
+/* ----- Exercise 14 ---- */
+/* -------------------- */
+/* Button link hover state with transition */
+.btn:hover {
+    background-color: #005f73;
     transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* ===== Footer Styles ===== */
-/* Bottom section of the page */
+/* -------------------- */
+/* ----- Exercise 15 ---- */
+/* -------------------- */
+/* Footer background, color, alignment, and spacing */
 #main-footer {
-    text-align: center;
-    padding: 1.5rem;
     background-color: #333;
-    color: #fff;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
