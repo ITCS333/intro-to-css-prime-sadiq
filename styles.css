@@ -1,3 +1,4 @@
+/* Exercise 1 - Global body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -7,18 +8,21 @@ body {
     line-height: 1.6;
 }
 
+/* Exercise 2 - Header styles */
 #main-header {
-    background-color: #4a4a4a;
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+/* Exercise 3 - Header h1 styles */
 #main-header h1 {
     font-size: 2.5em;
     margin: 0 0 10px 0;
 }
 
+/* Exercise 4 - Navigation links */
 #main-header nav a {
     color: white;
     text-decoration: none;
@@ -26,29 +30,34 @@ body {
     font-size: 1.1em;
 }
 
+/* Exercise 5 - Navigation hover */
 #main-header nav a:hover {
     color: #ffd700;
     text-decoration: underline;
 }
 
+/* Exercise 6 - Main content */
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
+/* Exercise 7 - Section headings */
 section h2 {
     color: #444;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
 }
 
+/* Exercise 8 - Intro paragraph */
 .intro {
     font-size: 1.2em;
     line-height: 1.8;
     font-style: italic;
 }
 
+/* Exercise 9 - Hobbies list */
 .hobbies-list {
     list-style: none;
     padding: 0;
@@ -61,19 +70,22 @@ section h2 {
     border-radius: 5px;
 }
 
+/* Exercise 10 - Highlighted item */
 .highlight {
     background-color: #ffeb3b;
     color: #333;
     font-weight: bold;
 }
 
+/* Exercise 11 - Blockquote */
 #quote blockquote {
     background-color: #f0f0f0;
     padding: 20px;
-    border-left: 5px solid #4a4a4a;
+    border-left: 5px solid #333;
     margin: 20px 0;
 }
 
+/* Exercise 12 - Cite element */
 cite {
     display: block;
     text-align: right;
@@ -81,6 +93,7 @@ cite {
     margin-top: 10px;
 }
 
+/* Exercise 13 - Button */
 .btn {
     display: inline-block;
     background-color: #008cba;
@@ -91,11 +104,13 @@ cite {
     font-weight: bold;
 }
 
+/* Exercise 14 - Button hover */
 .btn:hover {
     background-color: #005f73;
     transition: background-color 0.3s ease;
 }
 
+/* Exercise 15 - Footer */
 #main-footer {
     background-color: #333;
     color: white;
