@@ -1,9 +1,10 @@
 {
-  "name": "css-exercise",
+  "name": "css-exercise-tests",
   "version": "1.0.0",
-  "description": "CSS styling exercise with automated tests",
+  "description": "Tests for CSS exercise",
+  "main": "styles.test.js",
   "scripts": {
-    "test": "cd tests && npm test"
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^29.0.0",
