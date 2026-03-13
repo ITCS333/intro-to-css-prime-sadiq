@@ -1,120 +1,109 @@
-/* Exercise 1 */
+/* 1. Global body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-/* Exercise 2 */
-#main-header {
-    background-color: #333;
+/* 2. Header styles */
+header {
+    background-color: #2c3e50;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-/* Exercise 3 */
-#main-header h1 {
-    font-size: 2.5em;
-    margin: 0 0 10px 0;
+/* 3. Header h1 */
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
 }
 
-/* Exercise 4 */
-#main-header nav a {
+/* 4. Nav links */
+nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
-/* Exercise 5 */
-#main-header nav a:hover {
-    color: #ffd700;
+/* 5. Nav link hover */
+nav a:hover {
     text-decoration: underline;
 }
 
-/* Exercise 6 */
+/* 6. Main content */
 main {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Exercise 7 */
+/* 7. Section headings */
 section h2 {
-    color: #444;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
 }
 
-/* Exercise 8 */
+/* 8. Intro paragraph */
 .intro {
-    font-size: 1.2em;
-    line-height: 1.8;
+    font-size: 1.2rem;
+    line-height: 1.6;
     font-style: italic;
 }
 
-/* Exercise 9 */
-.hobbies-list {
+/* 9. Hobbies list */
+ul.hobbies {
     list-style: none;
     padding: 0;
 }
-
-.hobbies-list li {
-    background-color: #eee;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+ul.hobbies li {
+    padding: 5px 0;
 }
 
-/* Exercise 10 */
+/* 10. Highlighted item */
 .highlight {
-    background-color: #ffeb3b;
-    color: #333;
     font-weight: bold;
+    color: #e74c3c;
 }
 
-/* Exercise 11 */
-#quote blockquote {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-left: 5px solid #333;
-    margin: 20px 0;
+/* 11. Blockquote */
+blockquote {
+    background: #eee;
+    padding: 15px;
+    border-left: 5px solid #2c3e50;
 }
 
-/* Exercise 12 */
+/* 12. Cite element */
 cite {
     display: block;
     text-align: right;
-    color: #666;
-    margin-top: 10px;
+    color: #555;
 }
 
-/* Exercise 13 */
+/* 13. Button link */
 .btn {
     display: inline-block;
-    background-color: #008cba;
+    background-color: #2c3e50;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
 }
 
-/* Exercise 14 */
+/* 14. Button hover with transition */
 .btn:hover {
-    background-color: #005f73;
+    background-color: #34495e;
     transition: background-color 0.3s ease;
 }
 
-/* Exercise 15 */
-#main-footer {
-    background-color: #333;
+/* 15. Footer */
+footer {
+    background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 10px;
+    margin-top: 20px;
 }
