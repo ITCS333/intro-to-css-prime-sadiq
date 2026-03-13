@@ -1,105 +1,56 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Welcome to My Page</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-#main-header {
-    background-color: #4a4a4a;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p class="intro">
+                Hi! I'm a student learning web development. I enjoy building things 
+                for the web and learning new technologies every day.
+            </p>
+        </section>
 
-#main-header h1 {
-    font-size: 2.5em;
-    margin: 0 0 10px 0;
-}
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul class="hobbies-list">
+                <li>Reading</li>
+                <li>Hiking</li>
+                <li class="highlight">Coding</li>
+                <li>Photography</li>
+            </ul>
+        </section>
 
-#main-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
-}
+        <section id="quote">
+            <h2>Favorite Quote</h2>
+            <blockquote>
+                <p>"The best way to predict the future is to invent it."</p>
+                <cite>— Alan Kay</cite>
+            </blockquote>
+        </section>
 
-#main-header nav a:hover {
-    color: #ffd700;
-    text-decoration: underline;
-}
+        <section id="contact">
+            <h2>Contact</h2>
+            <a href="mailto:student@example.com" class="btn">Email Me</a>
+        </section>
+    </main>
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-section h2 {
-    color: #444;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.intro {
-    font-size: 1.2em;
-    line-height: 1.8;
-    font-style: italic;
-}
-
-.hobbies-list {
-    list-style: none;
-    padding: 0;
-}
-
-.hobbies-list li {
-    background-color: #eee;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.highlight {
-    background-color: #ffeb3b;
-    color: #333;
-    font-weight: bold;
-}
-
-#quote blockquote {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-left: 5px solid #4a4a4a;
-    margin: 20px 0;
-}
-
-cite {
-    display: block;
-    text-align: right;
-    color: #666;
-    margin-top: 10px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #008cba;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #005f73;
-    transition: background-color 0.3s ease;
-}
-
-#main-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
+    <footer id="main-footer">
+        <p>&copy; 2025 My Styled Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
