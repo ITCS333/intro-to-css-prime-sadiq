@@ -1,60 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Styled Page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+/* styles.css */
 
-    <header id="main-header">
-      <h1>Welcome to My Page</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+/* ===== Global Styles ===== */
+/* Base styles that apply to the entire page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <main>
+/* ===== Header Styles ===== */
+/* Main header with dark background */
+#main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
 
-      <section id="about">
-        <h2>About Me</h2>
-        <p class="intro">
-          Hi! I'm a student learning web development. I enjoy building things
-          for the web and learning new technologies every day.
-        </p>
-      </section>
+#main-header h1 {
+    margin: 0;  /* Remove default margin from heading */
+}
 
-      <section id="hobbies">
-        <h2>My Hobbies</h2>
-        <ul class="hobbies-list">
-          <li>Reading</li>
-          <li>Hiking</li>
-          <li class="highlight">Coding</li>
-          <li>Photography</li>
-        </ul>
-      </section>
+/* ===== Navigation Styles ===== */
+/* Style for the navigation menu links */
+#main-header nav {
+    margin-top: 0.5rem;
+}
 
-      <section id="quote">
-        <h2>Favorite Quote</h2>
-        <blockquote>
-          <p>"The best way to predict the future is to invent it."</p>
-          <cite>— Alan Kay</cite>
-        </blockquote>
-      </section>
+#main-header nav a {
+    color: #fff;
+    text-decoration: none;  /* Remove underline from links */
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 5px;  /* Rounded corners */
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
+}
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <a class="btn" href="mailto:student@example.com">Email Me</a>
-      </section>
+/* Hover effect for navigation links */
+#main-header nav a:hover {
+    background-color: #555;
+}
 
-    </main>
+/* ===== Main Content Area ===== */
+/* Centers the content and adds spacing */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
 
-    <footer id="main-footer">
-      <p>&copy; 2025 My Styled Page</p>
-    </footer>
+/* ===== Section Styles ===== */
+/* Card-like design for each section */
+section {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* Subtle shadow effect */
+}
 
-  </body>
-</html>
+section h2 {
+    color: #444;
+    border-bottom: 2px solid #eee;  /* Underline effect */
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* ===== Intro Paragraph ===== */
+/* Special styling for the introduction text */
+.intro {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* ===== Hobbies List ===== */
+/* Custom bullet points for the list */
+.hobbies-list {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+.hobbies-list li {
+    margin-bottom: 0.25rem;
+}
+
+/* ===== Highlighted Item ===== */
+/* Makes the "Coding" hobby stand out */
+.highlight {
+    background-color: #ffff99;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    display: inline-block;  /* Prevents full-width background */
+}
+
+/* ===== Quote Section ===== */
+/* Styling for the blockquote */
+#quote blockquote {
+    margin: 0;
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 1rem 2rem;
+    border-left: 5px solid #ccc;  /* Decorative left border */
+    border-radius: 4px;
+}
+
+#quote blockquote p {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+#quote blockquote cite {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ===== Button Styles ===== */
+/* Styling for the email button */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* ===== Footer Styles ===== */
+/* Bottom section of the page */
+#main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
